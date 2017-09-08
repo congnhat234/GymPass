@@ -2,29 +2,29 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colormain"
+    android:background="@color/colorMain"
     >
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="@dimen/layout_title_height"
         android:orientation="horizontal"
         android:background="@color/colorBackgroundmain"
         android:gravity="center"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="@dimen/margin_bottom"
         >
         <Button
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="@dimen/margin_left"
             android:background="@drawable/menu"
-            android:layout_width="35dp"
-            android:layout_height="35dp" />
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="GYM PASS"
+            android:text="@string/workout"
             android:gravity="center"
-            android:textColor="#ffffff"
-            android:textSize="20dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size"
             android:textStyle="bold"
             />
     </LinearLayout>
@@ -39,28 +39,27 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:layout_marginLeft="@dimen/img_margin_left"
+            android:layout_marginRight="@dimen/img_margin_right"
             android:background="@drawable/cc" />
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="240dp"
+            android:layout_width="@dimen/text_width"
             android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="@dimen/margin_left"
             android:layout_weight="0.20"
             android:gravity="center_vertical"
-            android:text="Thể Hình"
             android:textAllCaps="true"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textSize="@dimen/text_size"
+            android:text="@string/bodybuilding"/>
 
         <ImageView
             android:layout_gravity="center"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="@dimen/btn_size"
+            android:layout_height="@dimen/btn_size"
             android:background="@drawable/arr"
             />
     </LinearLayout>
@@ -69,30 +68,32 @@
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:layout_weight="1"
+        android:weightSum="1"
         >
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:layout_marginLeft="@dimen/img_margin_left"
+            android:layout_marginRight="@dimen/img_margin_right"
             android:background="@drawable/gotay" />
 
         <TextView
-            android:layout_marginLeft="20dp"
-            android:layout_width="240dp"
+            android:id="@+id/textView2"
+            android:layout_width="@dimen/text_width"
             android:layout_height="match_parent"
-            android:text="Fitness"
-            android:textAllCaps="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="0.20"
             android:gravity="center_vertical"
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_size"
+            android:text="@string/fitness"
             />
         <ImageView
             android:layout_gravity="center"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="@dimen/btn_size"
+            android:layout_height="@dimen/btn_size"
             android:background="@drawable/arr"
             />
     </LinearLayout>
@@ -101,29 +102,32 @@
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:layout_weight="1"
+        android:weightSum="1"
         >
         <ImageView
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:id="@+id/imageView3"
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:layout_marginLeft="@dimen/img_margin_left"
+            android:layout_marginRight="@dimen/img_margin_right"
             android:background="@drawable/gym"
             />
 
         <TextView
-            android:layout_marginLeft="20dp"
-            android:layout_width="240dp"
+            android:id="@+id/textView3"
+            android:layout_width="@dimen/text_width"
             android:layout_height="match_parent"
-            android:text="Lifting"
-            android:textAllCaps="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="0.20"
             android:gravity="center_vertical"
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_size"
+            android:text="@string/lifting"
             />
         <ImageView
             android:layout_gravity="center"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="@dimen/btn_size"
+            android:layout_height="@dimen/btn_size"
             android:background="@drawable/arr"
             />
     </LinearLayout>
@@ -132,29 +136,32 @@
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:layout_weight="1"
+        android:weightSum="1"
         >
         <ImageView
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:id="@+id/imageView4"
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:layout_marginLeft="@dimen/img_margin_left"
+            android:layout_marginRight="@dimen/img_margin_right"
             android:background="@drawable/gotay"
             />
 
         <TextView
-            android:layout_marginLeft="20dp"
-            android:layout_width="240dp"
+            android:id="@+id/textView4"
+            android:layout_width="@dimen/text_width"
             android:layout_height="match_parent"
-            android:text="kế hoạch tập 3 ngày"
-            android:textAllCaps="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="0.20"
             android:gravity="center_vertical"
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_size"
+            android:text="@string/plan"
             />
         <ImageView
             android:layout_gravity="center"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="@dimen/btn_size"
+            android:layout_height="@dimen/btn_size"
             android:background="@drawable/arr"
             />
     </LinearLayout>
@@ -163,29 +170,32 @@
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:layout_weight="1"
+        android:weightSum="1"
         >
         <ImageView
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:id="@+id/imageView5"
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:layout_marginLeft="@dimen/img_margin_left"
+            android:layout_marginRight="@dimen/img_margin_right"
             android:background="@drawable/bung1"
             />
 
         <TextView
-            android:layout_marginLeft="20dp"
-            android:layout_width="240dp"
+            android:id="@+id/textView5"
+            android:layout_width="@dimen/text_width"
             android:layout_height="match_parent"
-            android:text="kế hoạch tập 3 ngày tại nhà"
-            android:textAllCaps="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="0.20"
             android:gravity="center_vertical"
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_size"
+            android:text="@string/homeplan"
             />
         <ImageView
             android:layout_gravity="center"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="@dimen/btn_size"
+            android:layout_height="@dimen/btn_size"
             android:background="@drawable/arr"
             />
     </LinearLayout>
@@ -194,29 +204,32 @@
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:layout_weight="1"
+        android:weightSum="1"
         >
         <ImageView
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:id="@+id/imageView6"
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:layout_marginLeft="@dimen/img_margin_left"
+            android:layout_marginRight="@dimen/img_margin_right"
             android:background="@drawable/pushupmotay"
             />
 
         <TextView
-            android:layout_marginLeft="20dp"
-            android:layout_width="240dp"
+            android:id="@+id/textView6"
+            android:layout_width="@dimen/text_width"
             android:layout_height="match_parent"
-            android:text="đốt mỡ"
-            android:textAllCaps="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="0.20"
             android:gravity="center_vertical"
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_size"
+            android:text="@string/burnfat"
             />
         <ImageView
             android:layout_gravity="center"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="@dimen/btn_size"
+            android:layout_height="@dimen/btn_size"
             android:background="@drawable/arr"
             />
     </LinearLayout>
