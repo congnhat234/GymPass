@@ -7,4 +7,10 @@
     <string name="music">Âm nhạc</string>
     <string name="more">Khác</string>
     <string name="exit">Thoát</string>
+    <string name="bodybuilding">Thể Hình</string>
+    <string name="fitness">Fitness</string>
+    <string name="lifting">Lifting</string>
+    <string name="plan">Kế hoạch tập 3 ngày</string>
+    <string name="homeplan">Kế hoạch tập 3 ngày tại nhà</string>
+    <string name="burnfat">Đốt mỡ</string>
 </resources>
