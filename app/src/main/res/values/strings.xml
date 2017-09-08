@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Gym Pass</string>
+    <string name="app_name1">Nutrition</string>
+    <string name="exercise">Bài tập</string>
+    <string name="workout">Workouts</string>
+    <string name="nutrition">Dinh dưỡng</string>
+    <string name="music">Âm nhạc</string>
+    <string name="more">Khác</string>
+    <string name="exit">Thoát</string>
+    <string name="bodybuilding">Thể Hình</string>
+    <string name="fitness">Fitness</string>
+    <string name="lifting">Lifting</string>
+    <string name="plan">Kế hoạch tập 3 ngày</string>
+    <string name="homeplan">Kế hoạch tập 3 ngày tại nhà</string>
+    <string name="burnfat">Đốt mỡ</string>
+    <string name="bung">Bụng</string>
+    <string name="nguc">Ngực</string>
+    <string name="lung">Lưng</string>
+    <string name="baptay">Bắp tay</string>
+    <string name="cangtay">Cẳng tay</string>
+    <string name="bapchan">Bắp chân</string>
+    <string name="tangcan">Thực đơn tăng cân</string>
+    <string name="giamcan">Thực đơn giảm cân</string>
+    <string name="tangco">Thực đơn tăng cơ</string>
+</resources>

@@ -1,145 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:weightSum="10"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorMain">
     <LinearLayout
-        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_title_height"
+        android:orientation="horizontal"
         android:background="@color/colorBackgroundmain"
         android:gravity="center"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/margin_bottom">
         <Button
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="@dimen/margin_left"
             android:background="@drawable/menu"
-            android:layout_width="35dp"
-            android:layout_height="35dp" />
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height" />
         <TextView
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/nutrition"
             android:gravity="center"
-            android:padding="20dp"
-            android:layout_height="wrap_content"
-            android:text="DINH DƯỠNG"
-            android:textSize="20dp"
-            android:textColor="#fff"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size"
             android:textStyle="bold"
             />
-
     </LinearLayout>
 
     <LinearLayout
-        android:layout_weight="1"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="1">
 
         <ImageView
-            android:layout_marginLeft="6dp"
-            android:layout_marginRight="5dp"
-            android:background="@drawable/tangcan"
-            android:layout_width="80dp"
-            android:layout_height="80dp" />
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:layout_marginLeft="@dimen/img_margin_left"
+            android:layout_marginRight="@dimen/img_margin_right"
+            android:layout_gravity="center"
+            android:background="@drawable/tangcan" />
         <TextView
-
-            android:gravity="center_vertical"
-            android:layout_width="230dp"
+            android:id="@+id/textView"
+            android:layout_width="@dimen/text_width"
             android:layout_height="match_parent"
-            android:text="Thực đơn tăng cân"
-            android:textStyle="bold"
-            android:textSize="20dp"/>
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="0.20"
+            android:gravity="center_vertical"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_size"
+            android:text="@string/tangcan"/>
         <ImageView
             android:layout_gravity="center"
-            android:background="@drawable/arr"
-            android:layout_width="20dp"
-            android:layout_height="20dp" />
-
-
+            android:layout_width="@dimen/btn_size"
+            android:layout_height="@dimen/btn_size"
+            android:background="@drawable/arr" />
     </LinearLayout>
     <LinearLayout
-        android:layout_weight="1"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="1">
 
         <ImageView
-
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:background="@drawable/diet"
-            android:layout_width="80dp"
-            android:layout_height="80dp" />
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:layout_marginLeft="@dimen/img_margin_left"
+            android:layout_marginRight="@dimen/img_margin_right"
+            android:layout_gravity="center"
+            android:background="@drawable/diet" />
         <TextView
-
-            android:gravity="center_vertical"
-            android:layout_width="230dp"
+            android:id="@+id/textView2"
+            android:layout_width="@dimen/text_width"
             android:layout_height="match_parent"
-            android:text="Thực đơn giảm cân"
-            android:textStyle="bold"
-            android:textSize="20dp"/>
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="0.20"
+            android:gravity="center_vertical"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_size"
+            android:text="@string/giamcan"/>
         <ImageView
             android:layout_gravity="center"
-            android:background="@drawable/arr"
-            android:layout_width="20dp"
-            android:layout_height="20dp" />
-
-
+            android:layout_width="@dimen/btn_size"
+            android:layout_height="@dimen/btn_size"
+            android:background="@drawable/arr" />
     </LinearLayout>
     <LinearLayout
-        android:layout_weight="1"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="1">
 
         <ImageView
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:background="@drawable/protein"
-            android:layout_width="80dp"
-            android:layout_height="80dp" />
+            android:id="@+id/imageView3"
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:layout_marginLeft="@dimen/img_margin_left"
+            android:layout_marginRight="@dimen/img_margin_right"
+            android:layout_gravity="center"
+            android:background="@drawable/protein" />
         <TextView
-
-            android:gravity="center_vertical"
-            android:layout_width="230dp"
+            android:id="@+id/textView3"
+            android:layout_width="@dimen/text_width"
             android:layout_height="match_parent"
-            android:text="Thực đơn tăng cơ"
-            android:textStyle="bold"
-            android:textSize="20dp"/>
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="0.20"
+            android:gravity="center_vertical"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_size"
+            android:text="@string/tangco"/>
         <ImageView
             android:layout_gravity="center"
-            android:background="@drawable/arr"
-            android:layout_width="20dp"
-            android:layout_height="20dp" />
-
-
+            android:layout_width="@dimen/btn_size"
+            android:layout_height="@dimen/btn_size"
+            android:background="@drawable/arr" />
     </LinearLayout>
     <LinearLayout
-        android:layout_weight="1"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="1">
 
         <ImageView
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:background="@drawable/foodothers"
-            android:layout_width="80dp"
-            android:layout_height="80dp" />
+            android:id="@+id/imageView4"
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:layout_marginLeft="@dimen/img_margin_left"
+            android:layout_marginRight="@dimen/img_margin_right"
+            android:layout_gravity="center"
+            android:background="@drawable/foodothers" />
         <TextView
-
-            android:gravity="center_vertical"
-            android:layout_width="230dp"
+            android:id="@+id/textView4"
+            android:layout_width="@dimen/text_width"
             android:layout_height="match_parent"
-            android:text="Thực đơn khác"
-            android:textStyle="bold"
-            android:textSize="20dp"/>
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="0.20"
+            android:gravity="center_vertical"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_size"
+            android:text="Thực đơn khác"/>
         <ImageView
             android:layout_gravity="center"
-            android:background="@drawable/arr"
-            android:layout_width="20dp"
-            android:layout_height="20dp" />
+            android:layout_width="@dimen/btn_size"
+            android:layout_height="@dimen/btn_size"
+            android:background="@drawable/arr" />
     </LinearLayout>
 </LinearLayout>
