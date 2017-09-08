@@ -104,8 +104,8 @@
             android:id="@+id/img_more"
             android:background="@drawable/app"
             android:layout_width="@dimen/img_size"
-            android:layout_height="@dimen/img_size"
-            android:layout_marginLeft="@dimen/margin_left"
+                android:layout_height="@dimen/img_size"
+                android:layout_marginLeft="@dimen/margin_left"
             android:layout_marginTop="@dimen/margin_top" />
 
         <TextView
