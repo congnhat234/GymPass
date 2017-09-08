@@ -9,7 +9,7 @@
         android:orientation="vertical">
         <ImageView
             android:id="@+id/img_exercise"
-            android:background="@drawable/exercise"
+            android:background="@drawable/menu1"
             android:layout_width="@dimen/img_size"
             android:layout_height="@dimen/img_size"
             android:layout_marginLeft="@dimen/margin_left"
@@ -31,13 +31,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <ImageView
             android:id="@+id/img_workout"
-            android:background="@drawable/note"
             android:layout_width="@dimen/img_size"
             android:layout_height="@dimen/img_size"
             android:layout_marginLeft="@dimen/margin_left"
-            android:layout_marginTop="@dimen/margin_top"/>
+            android:layout_marginTop="@dimen/margin_top"
+            android:background="@drawable/menu2" />
 
         <TextView
             android:id="@+id/text_workout"
@@ -56,7 +57,7 @@
         android:orientation="vertical">
         <ImageView
             android:id="@+id/img_custom"
-            android:background="@drawable/pen"
+            android:background="@drawable/menu3"
             android:layout_width="@dimen/img_size"
             android:layout_height="@dimen/img_size"
             android:layout_marginLeft="@dimen/margin_left"
@@ -79,7 +80,7 @@
         android:orientation="vertical">
         <ImageView
             android:id="@+id/img_music"
-            android:background="@drawable/musicplayer"
+            android:background="@drawable/menu4"
             android:layout_width="@dimen/img_size"
             android:layout_height="@dimen/img_size"
             android:layout_marginLeft="@dimen/margin_left"
@@ -102,7 +103,7 @@
         android:orientation="vertical">
         <ImageView
             android:id="@+id/img_more"
-            android:background="@drawable/app"
+            android:background="@drawable/menu5"
             android:layout_width="@dimen/img_size"
                 android:layout_height="@dimen/img_size"
                 android:layout_marginLeft="@dimen/margin_left"
