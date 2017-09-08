@@ -32,8 +32,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
         android:layout_weight="1"
+        android:orientation="horizontal"
 
         android:weightSum="1">
 
@@ -43,25 +43,26 @@
             android:layout_height="80dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:background="@drawable/1" />
+            android:background="@drawable/d" />
 
         <TextView
-            android:layout_marginLeft="20dp"
             android:layout_width="240dp"
             android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.20"
+            android:gravity="center_vertical"
             android:text="Bụng"
             android:textAllCaps="true"
-            android:gravity="center_vertical"
             android:textSize="20dp"
-            android:textStyle="bold"
-            android:layout_weight="0.20" />
+            android:textStyle="bold" />
+
         <ImageView
-            android:layout_gravity="center"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:background="@drawable/arr"
-            />
+            android:layout_gravity="center"
+            android:background="@drawable/arr" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
