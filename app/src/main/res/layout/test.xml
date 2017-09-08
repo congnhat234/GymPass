@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
->
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,7 +12,7 @@
         android:background="#8e8282"
         android:gravity="center"
         android:layout_marginBottom="10dp"
-    >
+        >
         <Button
             android:layout_marginLeft="10dp"
             android:background="@drawable/menu"
@@ -27,54 +26,56 @@
             android:textColor="#ffffff"
             android:textSize="20dp"
             android:textStyle="bold"
-        />
+            />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
         android:layout_weight="1"
+        android:orientation="horizontal"
 
         android:weightSum="1">
+
         <ImageView
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
+            android:id="@+id/imageView"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:background="@drawable/bung"
-        />
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/d" />
 
         <TextView
-            android:layout_marginLeft="20dp"
             android:layout_width="240dp"
             android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.20"
+            android:gravity="center_vertical"
             android:text="Bụng"
             android:textAllCaps="true"
-            android:gravity="center_vertical"
             android:textSize="20dp"
-            android:textStyle="bold"
-            android:layout_weight="0.20" />
+            android:textStyle="bold" />
+
         <ImageView
-            android:layout_gravity="center"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:background="@drawable/arr"
-        />
+            android:layout_gravity="center"
+            android:background="@drawable/arr" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:layout_weight="1"
-    >
+        >
         <ImageView
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:background="@drawable/nguc"
-        />
+            />
 
         <TextView
             android:layout_marginLeft="20dp"
@@ -85,27 +86,27 @@
             android:gravity="center_vertical"
             android:textSize="20dp"
             android:textStyle="bold"
-        />
+            />
         <ImageView
             android:layout_gravity="center"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:background="@drawable/arr"
-        />
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:layout_weight="1"
-    >
+        >
         <ImageView
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:background="@drawable/lung"
-        />
+            />
 
         <TextView
             android:layout_marginLeft="20dp"
@@ -116,27 +117,27 @@
             android:gravity="center_vertical"
             android:textSize="20dp"
             android:textStyle="bold"
-        />
+            />
         <ImageView
             android:layout_gravity="center"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:background="@drawable/arr"
-        />
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:layout_weight="1"
-    >
+        >
         <ImageView
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:background="@drawable/baptay"
-        />
+            />
 
         <TextView
             android:layout_marginLeft="20dp"
@@ -147,27 +148,27 @@
             android:gravity="center_vertical"
             android:textSize="20dp"
             android:textStyle="bold"
-        />
+            />
         <ImageView
             android:layout_gravity="center"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:background="@drawable/arr"
-        />
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:layout_weight="1"
-    >
+        >
         <ImageView
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:background="@drawable/cangtay"
-        />
+            />
 
         <TextView
             android:layout_marginLeft="20dp"
@@ -178,27 +179,27 @@
             android:gravity="center_vertical"
             android:textSize="20dp"
             android:textStyle="bold"
-        />
+            />
         <ImageView
             android:layout_gravity="center"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:background="@drawable/arr"
-        />
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:layout_weight="1"
-    >
+        >
         <ImageView
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:background="@drawable/bapchan"
-        />
+            />
 
         <TextView
             android:layout_marginLeft="20dp"
@@ -209,13 +210,13 @@
             android:gravity="center_vertical"
             android:textSize="20dp"
             android:textStyle="bold"
-        />
+            />
         <ImageView
             android:layout_gravity="center"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:background="@drawable/arr"
-        />
+            />
     </LinearLayout>
 
 
