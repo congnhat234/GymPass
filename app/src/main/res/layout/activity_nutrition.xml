@@ -3,10 +3,11 @@
     android:orientation="vertical"
     android:weightSum="10"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colormain">
     <LinearLayout
         android:layout_weight="1"
-        android:background="@color/colormain"
+        android:background="@color/colorBackgroundmain"
         android:gravity="center"
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -38,7 +39,7 @@
         <ImageView
             android:layout_marginLeft="6dp"
             android:layout_marginRight="5dp"
-            android:background="@drawable/food"
+            android:background="@drawable/tangcan"
             android:layout_width="80dp"
             android:layout_height="80dp" />
         <TextView
@@ -67,7 +68,7 @@
 
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:background="@drawable/giamcan"
+            android:background="@drawable/diet"
             android:layout_width="80dp"
             android:layout_height="80dp" />
         <TextView
@@ -95,7 +96,7 @@
         <ImageView
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:background="@drawable/tangco"
+            android:background="@drawable/protein"
             android:layout_width="80dp"
             android:layout_height="80dp" />
         <TextView
@@ -123,7 +124,7 @@
         <ImageView
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:background="@drawable/cutlery"
+            android:background="@drawable/foodothers"
             android:layout_width="80dp"
             android:layout_height="80dp" />
         <TextView
