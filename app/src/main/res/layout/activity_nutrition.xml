@@ -36,7 +36,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:layout_marginLeft="5dp"
+            android:layout_marginLeft="6dp"
             android:layout_marginRight="5dp"
             android:background="@drawable/food"
             android:layout_width="80dp"
