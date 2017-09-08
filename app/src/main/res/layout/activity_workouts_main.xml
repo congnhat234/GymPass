@@ -32,8 +32,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
         android:orientation="horizontal"
+        android:layout_weight="1"
 
         android:weightSum="1">
 
@@ -43,45 +43,47 @@
             android:layout_height="80dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:background="@drawable/d" />
+            android:background="@drawable/cc" />
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="240dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
             android:layout_weight="0.20"
             android:gravity="center_vertical"
-            android:text="Bụng"
+            android:text="Thể Hình"
             android:textAllCaps="true"
             android:textSize="20dp"
             android:textStyle="bold" />
 
         <ImageView
+            android:layout_gravity="center"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:layout_gravity="center"
-            android:background="@drawable/arr" />
+            android:background="@drawable/arr"
+            />
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:layout_weight="1"
         >
+
         <ImageView
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
+            android:id="@+id/imageView2"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:background="@drawable/nguc"
-            />
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/gotay" />
 
         <TextView
             android:layout_marginLeft="20dp"
             android:layout_width="240dp"
             android:layout_height="match_parent"
-            android:text="Ngực"
+            android:text="Fitness"
             android:textAllCaps="true"
             android:gravity="center_vertical"
             android:textSize="20dp"
@@ -105,14 +107,14 @@
             android:layout_marginRight="5dp"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:background="@drawable/lung"
+            android:background="@drawable/gym"
             />
 
         <TextView
             android:layout_marginLeft="20dp"
             android:layout_width="240dp"
             android:layout_height="match_parent"
-            android:text="Lưng"
+            android:text="Lifting"
             android:textAllCaps="true"
             android:gravity="center_vertical"
             android:textSize="20dp"
@@ -136,14 +138,14 @@
             android:layout_marginRight="5dp"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:background="@drawable/baptay"
+            android:background="@drawable/gotay"
             />
 
         <TextView
             android:layout_marginLeft="20dp"
             android:layout_width="240dp"
             android:layout_height="match_parent"
-            android:text="Bắp tay"
+            android:text="kế hoạch tập 3 ngày"
             android:textAllCaps="true"
             android:gravity="center_vertical"
             android:textSize="20dp"
@@ -167,14 +169,14 @@
             android:layout_marginRight="5dp"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:background="@drawable/cangtay"
+            android:background="@drawable/bung1"
             />
 
         <TextView
             android:layout_marginLeft="20dp"
             android:layout_width="240dp"
             android:layout_height="match_parent"
-            android:text="Cẳng tay"
+            android:text="kế hoạch tập 3 ngày tại nhà"
             android:textAllCaps="true"
             android:gravity="center_vertical"
             android:textSize="20dp"
@@ -198,14 +200,14 @@
             android:layout_marginRight="5dp"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:background="@drawable/bapchan"
+            android:background="@drawable/pushupmotay"
             />
 
         <TextView
             android:layout_marginLeft="20dp"
             android:layout_width="240dp"
             android:layout_height="match_parent"
-            android:text="Bắp chân"
+            android:text="đốt mỡ"
             android:textAllCaps="true"
             android:gravity="center_vertical"
             android:textSize="20dp"
