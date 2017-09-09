@@ -20,6 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/nutrition"
+            android:textAllCaps="true"
             android:gravity="center"
             android:textColor="@color/colorWhite"
             android:textSize="@dimen/text_size"
