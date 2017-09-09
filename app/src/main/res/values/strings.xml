@@ -1,5 +1,36 @@
 <resources>
     <string name="app_name">Gym Pass</string>
     <string name="app_name1">Nutrition</string>
+    <string name="exercise">Bài tập</string>
+    <string name="workout">Workouts</string>
+    <string name="nutrition">Dinh dưỡng</string>
+    <string name="music">Âm nhạc</string>
+    <string name="more">Khác</string>
+    <string name="exit">Thoát</string>
+    <string name="bodybuilding">Thể Hình</string>
+    <string name="fitness">Fitness</string>
+    <string name="lifting">Lifting</string>
+    <string name="plan">Kế hoạch tập 3 ngày</string>
+    <string name="homeplan">Kế hoạch tập 3 ngày tại nhà</string>
+    <string name="burnfat">Đốt mỡ</string>
+    <string name="bung">Bụng</string>
+    <string name="nguc">Ngực</string>
+    <string name="lung">Lưng</string>
+    <string name="baptay">Bắp tay</string>
+    <string name="cangtay">Cẳng tay</string>
+    <string name="bapchan">Bắp chân</string>
+    <string name="tangcan">Thực đơn tăng cân</string>
+    <string name="giamcan">Thực đơn giảm cân</string>
+    <string name="tangco">Thực đơn tăng cơ</string>
+    <string name="tangco1">- Bạn đang trong quá trình tập luyện phát triển cơ bắp, dinh dưỡng đóng vai trò rất quan trọng trong quá trình này.</string>
+    <string name="tangco2">- Hãy áp dụng các thực đơn tăng cơ này ngay để bạn có thể tăng cơ bắp tốt nhất.</string>
+    <string name="phamkhac">Thực phẩm bổ sung</string>
+    <string name="phamkhac1">- Giúp tiết kiệm thời gian lên thực đơn dinh dưỡng khi tập luyện.</string>
+    <string name="phamkhac2">- Giúp tăng cơ bắp, cắt nét cơ hiệu quả.</string>
+    <string name="tangcan1">- Bạn muốn tăng cân nhanh, bạn đang tìm các thực đơn tăng cân cho người gầy?</string>
+    <string name="tangcan2">- Hãy áp dụng các thực đơn tăng cân này để giúp bạn cải thiện cân nặng và có body cân đối hơn.</string>
+    <string name="giamcan1">- Bạn đang quá mập và muốn giảm cân hiệu quả?</string>
+    <string name="giamcan2">- Hãy áp dụng các thực đơn giảm cân hiệu quả này ngay.</string>
+
 
 </resources>

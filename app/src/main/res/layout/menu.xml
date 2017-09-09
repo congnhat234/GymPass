@@ -14,7 +14,7 @@
         android:layout_marginBottom="10dp"
         >
         <Button
-            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginLeft="10dp"
             android:background="@drawable/menu"
             android:layout_width="35dp"
             android:layout_height="35dp" />
@@ -37,15 +37,15 @@
 
         android:weightSum="1">
         <ImageView
-            android:layout_marginLeft="@dimen/margin_left"
-            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:background="@drawable/bung"
             />
 
         <TextView
-            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginLeft="20dp"
             android:layout_width="240dp"
             android:layout_height="match_parent"
             android:text="Bụng"
@@ -68,15 +68,15 @@
         android:layout_weight="1"
         >
         <ImageView
-            android:layout_marginLeft="@dimen/margin_left"
-            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:background="@drawable/nguc"
             />
 
         <TextView
-            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginLeft="20dp"
             android:layout_width="240dp"
             android:layout_height="match_parent"
             android:text="Ngực"
@@ -99,15 +99,15 @@
         android:layout_weight="1"
         >
         <ImageView
-            android:layout_marginLeft="@dimen/margin_left"
-            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:background="@drawable/lung"
             />
 
         <TextView
-            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginLeft="20dp"
             android:layout_width="240dp"
             android:layout_height="match_parent"
             android:text="Lưng"
@@ -130,15 +130,15 @@
         android:layout_weight="1"
         >
         <ImageView
-            android:layout_marginLeft="@dimen/margin_left"
-            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:background="@drawable/baptay"
             />
 
         <TextView
-            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginLeft="20dp"
             android:layout_width="240dp"
             android:layout_height="match_parent"
             android:text="Bắp tay"
@@ -161,15 +161,15 @@
         android:layout_weight="1"
         >
         <ImageView
-            android:layout_marginLeft="@dimen/margin_left"
-            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:background="@drawable/cangtay"
             />
 
         <TextView
-            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginLeft="20dp"
             android:layout_width="240dp"
             android:layout_height="match_parent"
             android:text="Cẳng tay"
@@ -192,15 +192,15 @@
         android:layout_weight="1"
         >
         <ImageView
-            android:layout_marginLeft="@dimen/margin_left"
-            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:background="@drawable/bapchan"
             />
 
         <TextView
-            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginLeft="20dp"
             android:layout_width="240dp"
             android:layout_height="match_parent"
             android:text="Bắp chân"
