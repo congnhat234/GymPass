@@ -22,4 +22,5 @@
     <string name="tangcan">Thực đơn tăng cân</string>
     <string name="giamcan">Thực đơn giảm cân</string>
     <string name="tangco">Thực đơn tăng cơ</string>
+    <string name="phamkhac">Thực đơn khác</string>
 </resources>
