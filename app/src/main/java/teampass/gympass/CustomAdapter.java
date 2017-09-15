@@ -27,24 +27,35 @@ public class CustomAdapter extends ArrayAdapter {
     private ArrayList<Menu> arrMenu;
     public CustomAdapter( Context context, int resource,ArrayList<Menu> objects) {
         super(context, resource, objects);
-      this.context=context;
+       this.context=context;
         this.resourse=resource;
         this.arrMenu=objects;
     }
 
     @NonNull
     @Override
-    public View getView(int position, View convertView,  ViewGroup parent) {
-        convertView = LayoutInflater.from(context).inflate(R.layout.test,parent,false);
-        TextView tv_thehinh =(TextView) convertView.findViewById(R.id.tv_thehinh);
-        TextView tv_thehinh2 =(TextView) convertView.findViewById(R.id.tv_thehinh2);
 
+    public View getView(int position, View convertView,  ViewGroup parent) {
+        ViewHodler viewHodler;
+        if(convertView==null){
+          viewHodler = new ViewHodler();
+            convertView = LayoutInflater.from(context).inflate(R.layout.test,parent,false);
+
+            viewHodler.imgTheHinh =(ImageView) convertView.findViewById(R.id.img_thehinh);
+            viewHodler.tvTheHinh2 =(TextView) convertView.findViewById(R.id.tv_thehinh2);
+            convertView.setTag(viewHodler);
+        }else  {
+            viewHodler=(ViewHodler) convertView.getTag();
+        }
         Menu menu= arrMenu.get(position);
-        tv_thehinh.setBackgroundColor(menu.getColor());
-        tv_thehinh2.setText((position+1)+"");
-        tv_thehinh2.setText(menu.getName());
+        viewHodler.imgTheHinh.setBackgroundResource(R.drawable.cc);
+        viewHodler.tvTheHinh2.setText(menu.getName());
         return convertView;
 
+    }
+    public class ViewHodler {
+        ImageView imgTheHinh;
+        TextView tvTheHinh2;
     }
 }
 

@@ -38,8 +38,8 @@
      android:layout_width="match_parent"
      android:layout_height="80dp">
 
-        <TextView
-            android:id="@+id/tv_thehinh"
+     <ImageView
+            android:id="@+id/img_thehinh"
             android:gravity="center"
             android:background="@drawable/cc"
             android:layout_width="80dp"

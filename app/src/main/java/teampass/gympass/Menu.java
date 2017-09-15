@@ -6,32 +6,27 @@ package teampass.gympass;
  */
 
 public class Menu {
+        private int imgTheHinh;
         private String name;
-        private int color;
 
+    public Menu(int imgTheHinh, String name) {
+        this.imgTheHinh = imgTheHinh;
+        this.name = name;
+    }
 
-        public Menu(String name, int color ) {
-            this.name = name;
-            this.color = color;
-        }
+    public int isImgTheHinh() {
+        return imgTheHinh;
+    }
 
+    public void setImgTheHinh(int imgTheHinh) {
+        this.imgTheHinh = imgTheHinh;
+    }
 
     public String getName() {
-            return name;
-        }
+        return name;
+    }
 
-        public void setName(String name) {
-            this.name = name;
-        }
-
-        public int getColor() {
-            return color;
-        }
-
-        public void setColor(int color) {
-            this.color = color;
-
-        }
-
-
+    public void setName(String name) {
+        this.name = name;
+    }
 }
