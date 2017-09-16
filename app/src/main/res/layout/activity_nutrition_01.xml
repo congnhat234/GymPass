@@ -30,24 +30,16 @@
             android:textSize="@dimen/text_size"
             android:textStyle="bold" />
     </LinearLayout>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_marginLeft="@dimen/margin_left"
-        android:layout_height="wrap_content"
-        android:text="@string/tangcan1"
-        android:textSize="@dimen/text_size"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_marginLeft="@dimen/margin_left"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_top"
-        android:text="@string/tangcan2"
-        android:textSize="@dimen/text_size"/>
-    <LinearLayout
+
+
+    <ListView
+        android:id="@+id/lvTangcan"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    </LinearLayout>
+
+    </ListView>
+
 
 
 </LinearLayout>

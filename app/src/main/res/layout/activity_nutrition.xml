@@ -105,6 +105,7 @@
             android:layout_marginRight="@dimen/img_margin_right"
             android:layout_gravity="center"
             android:background="@drawable/protein" />
+
         <TextView
             android:id="@+id/textView3"
             android:layout_width="@dimen/text_width"
@@ -112,9 +113,10 @@
             android:layout_marginLeft="@dimen/margin_left"
             android:layout_weight="0.20"
             android:gravity="center_vertical"
+            android:text="@string/tangco"
             android:textAllCaps="true"
-            android:textSize="@dimen/text_size"
-            android:text="@string/tangco"/>
+            android:textSize="@dimen/text_size" />
+
         <ImageView
             android:layout_gravity="center"
             android:layout_width="@dimen/btn_size"
