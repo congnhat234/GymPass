@@ -1,4 +1,4 @@
-package teampass.gympass;
+package teampass.gympass.model;
 
 
 /**
@@ -14,7 +14,7 @@ public class Menu {
         this.name = name;
     }
 
-    public int isImgTheHinh() {
+    public int getImgTheHinh() {
         return imgTheHinh;
     }
 
