@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Nutrition_01Activity" />
+        <activity android:name=".NutritionActivity" />
+        <activity android:name=".Nutrition_02Activity" />
+        <activity android:name=".Nutrition_03Activity" />
+        <activity android:name=".Nutrition_04Activity"></activity>
     </application>
 
 </manifest>
