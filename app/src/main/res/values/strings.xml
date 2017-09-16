@@ -30,5 +30,7 @@
     <string name="giamcan1">- Bạn đang quá mập và muốn giảm cân hiệu quả?</string>
     <string name="giamcan2">- Hãy áp dụng các thực đơn giảm cân hiệu quả này ngay.</string>
 
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
 </resources>

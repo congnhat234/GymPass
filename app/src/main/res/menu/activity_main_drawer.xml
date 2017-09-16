@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_exercise"
+            android:icon="@drawable/menu1"
+            android:actionLayout="@layout/sliding_menu"
+            android:title="Bài tập" />
+        <item
+            android:id="@+id/nav_workout"
+            android:icon="@drawable/menu2"
+            android:title="Workouts" />
+        <item
+            android:id="@+id/nav_nutrition"
+            android:icon="@drawable/menu3"
+            android:title="Dinh dưỡng" />
+        <item
+            android:id="@+id/nav_music"
+            android:icon="@drawable/menu4"
+            android:title="Âm nhạc" />
+        <item
+            android:id="@+id/nav_more"
+            android:icon="@drawable/menu5"
+            android:title="Khác" />
+    </group>
+
+
+</menu>
