@@ -22,14 +22,7 @@
     <string name="tangcan">Thực đơn tăng cân</string>
     <string name="giamcan">Thực đơn giảm cân</string>
     <string name="tangco">Thực đơn tăng cơ</string>
-    <string name="tangco1">- Bạn đang trong quá trình tập luyện phát triển cơ bắp, dinh dưỡng đóng vai trò rất quan trọng trong quá trình này.</string>
-    <string name="tangco2">- Hãy áp dụng các thực đơn tăng cơ này ngay để bạn có thể tăng cơ bắp tốt nhất.</string>
     <string name="phamkhac">Thực phẩm bổ sung</string>
-    <string name="phamkhac1">- Giúp tiết kiệm thời gian lên thực đơn dinh dưỡng khi tập luyện.</string>
-    <string name="phamkhac2">- Giúp tăng cơ bắp, cắt nét cơ hiệu quả.</string>
-    <string name="giamcan1">- Bạn đang quá mập và muốn giảm cân hiệu quả?</string>
-    <string name="giamcan2">- Hãy áp dụng các thực đơn giảm cân hiệu quả này ngay.</string>
-
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
