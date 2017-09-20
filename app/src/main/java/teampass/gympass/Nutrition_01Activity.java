@@ -20,14 +20,10 @@ public class Nutrition_01Activity extends AppCompatActivity {
         setContentView(R.layout.activity_nutrition_01);
         doCreateFakeData();
 
-
         lvTangcan = (ListView) findViewById(R.id.lvTangcan);
-
         ListMenu adapter = new ListMenu(Nutrition_01Activity.this, R.layout.item_menu, mMenun);
         lvTangcan.setAdapter(adapter);
-
     }
-
     private void doCreateFakeData() {
         Menun m1 = new Menun(R.drawable.tangcant2, "Thực đơn thứ 2");
         Menun m2 = new Menun(R.drawable.tangcant3, "Thực đơn thứ 3");
@@ -45,5 +41,4 @@ public class Nutrition_01Activity extends AppCompatActivity {
         mMenun.add(m6);
         mMenun.add(m7);
     }
-
 }
