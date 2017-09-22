@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Workouts_2daysPerWeek">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -17,7 +17,8 @@
         </activity>
         <activity android:name=".ExerciseActivity" />
         <activity android:name=".Nutrition_01Activity" />
-        <activity android:name=".WorkoutsActivity" />
+        <!--<activity android:name=".WorkoutsActivity" />-->
+        <activity android:name=".WorkoutsThehinh" />
         <activity android:name=".NutritionActivity" />
         <activity android:name=".Nutrition_02Activity" />
         <activity android:name=".Nutrition_03Activity" />

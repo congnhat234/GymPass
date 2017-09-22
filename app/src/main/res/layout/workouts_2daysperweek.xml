@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" >
+<LinearLayout
+xmlns:android= "http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_title_height"
+    android:orientation="horizontal"
+    android:background="@color/colorBackgroundmain"
+    android:gravity="center"
+    android:layout_marginBottom="@dimen/margin_bottom"
+    >
+    <ImageButton
+        android:layout_marginLeft="@dimen/margin_left"
+        android:background="@drawable/arrows"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/exercise"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        />
+</LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:text="Day 1"
+    android:gravity="center"
+    android:textColor="@color/colorWhite"
+    android:textSize="@dimen/text_size"
+    android:textStyle="bold"
+    android:background="@color/colorBackgroundmain"
+    />
+
+<ListView
+    android:id="@+id/lv_workouts_day1"
+    android:layout_width="match_parent"
+    android:layout_height="500dp">
+
+</ListView>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:text="Day 2"
+    android:gravity="center"
+    android:textColor="@color/colorWhite"
+    android:textSize="@dimen/text_size"
+    android:textStyle="bold"
+    android:background="@color/colorBackgroundmain"
+    />
+<ListView
+    android:id="@+id/lv_workouts_day2"
+    android:layout_width="match_parent"
+    android:layout_height="500dp">
+
+</ListView>
+</LinearLayout>
+
+</ScrollView>

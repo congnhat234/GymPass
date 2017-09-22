@@ -4,13 +4,11 @@ package teampass.gympass;
         import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
         import android.view.View;
+        import android.widget.AdapterView;
         import android.widget.ListView;
-
         import java.util.ArrayList;
-
         import teampass.gympass.adapter.CustomAdapter;
         import teampass.gympass.model.Menu;
-
         import static teampass.gympass.R.drawable.abs;
         import static teampass.gympass.R.drawable.back;
         import static teampass.gympass.R.drawable.bung1;
@@ -24,15 +22,14 @@ package teampass.gympass;
         import static teampass.gympass.R.drawable.shouders;
         import static teampass.gympass.R.drawable.threedays;
 
-public class WorkoutsActivity  extends AppCompatActivity  {
+public class WorkoutsActivity  extends AppCompatActivity {
     private ListView lvWorkouts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_view_workouts);
-        lvWorkouts = (ListView) findViewById(R.id.lv_workouts);
-        ArrayList<Menu> arrayList = new ArrayList<>();
+        final ArrayList<Menu> arrayList = new ArrayList<>();
         Menu menu1 = new Menu(cc, "Thể hình");
         Menu menu2 = new Menu(fitness, "Fitness");
         Menu menu3 = new Menu(gym, "Lifting");
@@ -43,8 +40,8 @@ public class WorkoutsActivity  extends AppCompatActivity  {
         Menu menu8 = new Menu(chest, "Chest");
         Menu menu9 = new Menu(gotay, "Arms");
         Menu menu10 = new Menu(leg, "Legs");
-        Menu menu11= new Menu(shouders, "Shouders");
-        Menu menu12= new Menu(back, "Back");
+        Menu menu11 = new Menu(shouders, "Shouders");
+        Menu menu12 = new Menu(back, "Back");
         arrayList.add(menu1);
         arrayList.add(menu2);
         arrayList.add(menu3);
@@ -57,10 +54,29 @@ public class WorkoutsActivity  extends AppCompatActivity  {
         arrayList.add(menu10);
         arrayList.add(menu11);
         arrayList.add(menu12);
-
         CustomAdapter customAdapter = new CustomAdapter(this, R.layout.test, arrayList);
+        lvWorkouts = (ListView) findViewById(R.id.lv_workouts);
         lvWorkouts.setAdapter(customAdapter);
+        lvWorkouts.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                switch (position) {
+                    case 0:
+                        Intent intent = new Intent(WorkoutsActivity.this, WorkoutsThehinh.class);
+                        startActivity(intent);
+                        break;
+                    case 1:
+                        Intent intent1 = new Intent(WorkoutsActivity.this, WorkoutsThehinh.class);
+                        startActivity(intent1);
+                        break;
+
+
+                }
+            }
+        });
     }
-
-
 }
+
+
+
+
