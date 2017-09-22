@@ -1,5 +1,6 @@
 package teampass.gympass;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -48,9 +49,11 @@ public class ExerciseActivity extends AppCompatActivity implements NavigationVie
         if (id == R.id.nav_exercise) {
             // Handle the camera action
         } else if (id == R.id.nav_workout) {
-
+            Intent intent = new Intent(ExerciseActivity.this, WorkoutsActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_nutrition) {
-
+            Intent intent = new Intent(ExerciseActivity.this, NutritionActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_music) {
 
         } else if (id == R.id.nav_more) {

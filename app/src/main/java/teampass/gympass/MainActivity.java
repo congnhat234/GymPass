@@ -14,16 +14,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_exercise);
+        setContentView(R.layout.activity_main);
 
-//        int secondsDelayed = 1;
-//        new Handler().postDelayed(new Runnable() {
-//            public void run() {
-//                startActivity(new Intent(MainActivity.this, ExerciseActivity.class));
-//                finish();
-//            }
-//        }, secondsDelayed * 1000);
-//    }
+        int secondsDelayed = 3;
+        new Handler().postDelayed(new Runnable() {
+            public void run() {
+                startActivity(new Intent(MainActivity.this, ExerciseActivity.class));
+                finish();
+            }
+        }, secondsDelayed * 1000);
+    }
 
 
 //        Intent intent = new Intent(this, ExerciseActivity.class);
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //
 //        });
-
-
-    }
+//
+//
+//    }
 }
