@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "742073880315",
+    "firebase_url": "https://gympass-dcb9d.firebaseio.com",
+    "project_id": "gympass-dcb9d",
+    "storage_bucket": "gympass-dcb9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742073880315:android:7ef56b23ce9d4f63",
+        "android_client_info": {
+          "package_name": "teampass.gympass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742073880315-9n99kmmf4t0m5kn0vlhvs6nm0cfrkm0h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "teampass.gympass",
+            "certificate_hash": "2e8afbf202db47c0f7f76190e36c090f98f6d0e8"
+          }
+        },
+        {
+          "client_id": "742073880315-dben4mn4cbp4rkb9hu505k8o9tfiihh1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHhqO0XWT6vAz-MELAYsJ3D68Roaer-_I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742073880315-dben4mn4cbp4rkb9hu505k8o9tfiihh1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
