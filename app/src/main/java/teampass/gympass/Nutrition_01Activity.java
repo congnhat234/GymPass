@@ -2,6 +2,8 @@ package teampass.gympass;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -21,8 +23,31 @@ public class Nutrition_01Activity extends AppCompatActivity {
         doCreateFakeData();
 
         lvTangcan = (ListView) findViewById(R.id.lvTangcan);
-        ListMenu adapter = new ListMenu(Nutrition_01Activity.this, R.layout.item_menu, mMenun);
+        final ListMenu adapter = new ListMenu(Nutrition_01Activity.this, R.layout.item_menu, mMenun);
         lvTangcan.setAdapter(adapter);
+        lvTangcan.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+//                switch (position){
+//                    case 0:
+//                        Intent intent = new Intent(Nutrition_01Activity.this, MainActivity.class);
+//                        startActivity(intent);
+//                        break;
+//                    case 1:
+//                        Intent intent1 = new Intent(Nutrition_01Activity.this, Nutrition_02Activity.class);
+//                        startActivity(intent1);
+//                        break;
+//                    case 2:
+//                        Intent intent2 = new Intent(Nutrition_01Activity.this, Nutrition_03Activity.class);
+//                        startActivity(intent2);
+//                        break;
+//                    case 3:
+//                        Intent intent3 = new Intent(Nutrition_01Activity.this, Nutrition_04Activity.class);
+//                        startActivity(intent3);
+//                        break;
+//                }
+            }
+        });
     }
     private void doCreateFakeData() {
         Menun m1 = new Menun(R.drawable.tangcant2, "Thực đơn thứ 2");
@@ -41,4 +66,5 @@ public class Nutrition_01Activity extends AppCompatActivity {
         mMenun.add(m6);
         mMenun.add(m7);
     }
+
 }
