@@ -111,7 +111,7 @@ public class WorkoutsActivity  extends AppCompatActivity implements NavigationVi
         int id = item.getItemId();
 
         if (id == R.id.nav_exercise) {
-            Intent intent = new Intent(WorkoutsActivity.this, ExerciseActivity.class);
+            Intent intent = new Intent(WorkoutsActivity.this, Exercise_Menu.class);
             startActivity(intent);
         } else if (id == R.id.nav_workout) {
 
