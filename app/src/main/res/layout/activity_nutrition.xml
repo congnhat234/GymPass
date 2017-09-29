@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorMain">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/layout_title_height"
@@ -11,147 +12,163 @@
         android:background="@color/colorBackgroundmain"
         android:gravity="center"
         android:layout_marginBottom="@dimen/margin_bottom">
-        <Button
-            android:layout_marginLeft="@dimen/margin_left"
-            android:background="@drawable/menu"
-            android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/nutrition"
-            android:textAllCaps="true"
-            android:gravity="center"
-            android:textColor="@color/colorWhite"
-            android:textSize="@dimen/text_size"
-            android:textStyle="bold"
-            />
+
     </LinearLayout>
 
-    <LinearLayout
+    <ListView
+        android:id="@+id/lv_nutrition"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_weight="1"
-        android:weightSum="1">
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="@dimen/img_size"
-            android:layout_height="@dimen/img_size"
-            android:layout_marginLeft="@dimen/img_margin_left"
-            android:layout_marginRight="@dimen/img_margin_right"
-            android:layout_gravity="center"
-            android:background="@drawable/tangcan" />
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="@dimen/text_width"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/margin_left"
-            android:layout_weight="0.20"
-            android:gravity="center_vertical"
-            android:textAllCaps="true"
-            android:textSize="@dimen/text_size"
-            android:text="@string/tangcan"/>
-        <ImageView
-            android:layout_gravity="center"
-            android:layout_width="@dimen/btn_size"
-            android:layout_height="@dimen/btn_size"
-            android:background="@drawable/arr" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_weight="1"
-        android:weightSum="1">
+    </ListView>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/layout_title_height"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:background="@color/colorBackgroundmain"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginBottom="@dimen/margin_bottom">-->
+        <!--<Button-->
+            <!--android:layout_marginLeft="@dimen/margin_left"-->
+            <!--android:background="@drawable/menu"-->
+            <!--android:layout_width="@dimen/button_width"-->
+            <!--android:layout_height="@dimen/button_height" />-->
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="@string/nutrition"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:textStyle="bold"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="@dimen/img_size"
-            android:layout_height="@dimen/img_size"
-            android:layout_marginLeft="@dimen/img_margin_left"
-            android:layout_marginRight="@dimen/img_margin_right"
-            android:layout_gravity="center"
-            android:background="@drawable/diet" />
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="@dimen/text_width"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/margin_left"
-            android:layout_weight="0.20"
-            android:gravity="center_vertical"
-            android:textAllCaps="true"
-            android:textSize="@dimen/text_size"
-            android:text="@string/giamcan"/>
-        <ImageView
-            android:layout_gravity="center"
-            android:layout_width="@dimen/btn_size"
-            android:layout_height="@dimen/btn_size"
-            android:background="@drawable/arr" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_weight="1"
-        android:weightSum="1">
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_weight="1"-->
+        <!--android:weightSum="1">-->
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="@dimen/img_size"
-            android:layout_height="@dimen/img_size"
-            android:layout_marginLeft="@dimen/img_margin_left"
-            android:layout_marginRight="@dimen/img_margin_right"
-            android:layout_gravity="center"
-            android:background="@drawable/protein" />
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView"-->
+            <!--android:layout_width="@dimen/img_size"-->
+            <!--android:layout_height="@dimen/img_size"-->
+            <!--android:layout_marginLeft="@dimen/img_margin_left"-->
+            <!--android:layout_marginRight="@dimen/img_margin_right"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="@drawable/tangcan" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/textView"-->
+            <!--android:layout_width="@dimen/text_width"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="@dimen/margin_left"-->
+            <!--android:layout_weight="0.20"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/tangcan"/>-->
+        <!--<ImageView-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_width="@dimen/btn_size"-->
+            <!--android:layout_height="@dimen/btn_size"-->
+            <!--android:background="@drawable/arr" />-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_weight="1"-->
+        <!--android:weightSum="1">-->
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="@dimen/text_width"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/margin_left"
-            android:layout_weight="0.20"
-            android:gravity="center_vertical"
-            android:text="@string/tangco"
-            android:textAllCaps="true"
-            android:textSize="@dimen/text_size" />
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView2"-->
+            <!--android:layout_width="@dimen/img_size"-->
+            <!--android:layout_height="@dimen/img_size"-->
+            <!--android:layout_marginLeft="@dimen/img_margin_left"-->
+            <!--android:layout_marginRight="@dimen/img_margin_right"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="@drawable/diet" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/textView2"-->
+            <!--android:layout_width="@dimen/text_width"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="@dimen/margin_left"-->
+            <!--android:layout_weight="0.20"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/giamcan"/>-->
+        <!--<ImageView-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_width="@dimen/btn_size"-->
+            <!--android:layout_height="@dimen/btn_size"-->
+            <!--android:background="@drawable/arr" />-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_weight="1"-->
+        <!--android:weightSum="1">-->
 
-        <ImageView
-            android:layout_gravity="center"
-            android:layout_width="@dimen/btn_size"
-            android:layout_height="@dimen/btn_size"
-            android:background="@drawable/arr" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_weight="1"
-        android:weightSum="1">
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView3"-->
+            <!--android:layout_width="@dimen/img_size"-->
+            <!--android:layout_height="@dimen/img_size"-->
+            <!--android:layout_marginLeft="@dimen/img_margin_left"-->
+            <!--android:layout_marginRight="@dimen/img_margin_right"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="@drawable/protein" />-->
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="@dimen/img_size"
-            android:layout_height="@dimen/img_size"
-            android:layout_marginLeft="@dimen/img_margin_left"
-            android:layout_marginRight="@dimen/img_margin_right"
-            android:layout_gravity="center"
-            android:background="@drawable/foodothers" />
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="@dimen/text_width"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/margin_left"
-            android:layout_weight="0.20"
-            android:gravity="center_vertical"
-            android:textAllCaps="true"
-            android:textSize="@dimen/text_size"
-            android:text="@string/phamkhac"/>
-        <ImageView
-            android:layout_gravity="center"
-            android:layout_width="@dimen/btn_size"
-            android:layout_height="@dimen/btn_size"
-            android:background="@drawable/arr" />
-    </LinearLayout>
+        <!--<TextView-->
+            <!--android:id="@+id/textView3"-->
+            <!--android:layout_width="@dimen/text_width"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="@dimen/margin_left"-->
+            <!--android:layout_weight="0.20"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="@string/tangco"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:textSize="@dimen/text_size" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_width="@dimen/btn_size"-->
+            <!--android:layout_height="@dimen/btn_size"-->
+            <!--android:background="@drawable/arr" />-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_weight="1"-->
+        <!--android:weightSum="1">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView4"-->
+            <!--android:layout_width="@dimen/img_size"-->
+            <!--android:layout_height="@dimen/img_size"-->
+            <!--android:layout_marginLeft="@dimen/img_margin_left"-->
+            <!--android:layout_marginRight="@dimen/img_margin_right"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="@drawable/foodothers" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/textView4"-->
+            <!--android:layout_width="@dimen/text_width"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="@dimen/margin_left"-->
+            <!--android:layout_weight="0.20"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/phamkhac"/>-->
+        <!--<ImageView-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_width="@dimen/btn_size"-->
+            <!--android:layout_height="@dimen/btn_size"-->
+            <!--android:background="@drawable/arr" />-->
+    <!--</LinearLayout>-->
 </LinearLayout>
