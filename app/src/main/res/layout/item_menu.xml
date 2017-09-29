@@ -17,8 +17,14 @@
             android:textSize="22sp"
             android:textStyle="bold"
             android:text="Thuc don thu 2"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/textview_width"
             android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="@dimen/arrow_width"
+            android:layout_height="@dimen/arrow_height"
+            android:background="@drawable/arr"
+            android:layout_gravity="center"
+            />
 
 
 
