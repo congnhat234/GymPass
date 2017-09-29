@@ -12,6 +12,9 @@ package teampass.gympass;
         import android.view.View;
         import android.widget.AdapterView;
         import android.widget.ListView;
+
+        import com.google.firebase.FirebaseApp;
+
         import java.util.ArrayList;
         import teampass.gympass.adapter.CustomAdapter;
         import teampass.gympass.model.Menu;
@@ -30,7 +33,7 @@ package teampass.gympass;
 
 public class WorkoutsActivity  extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private ListView lvWorkouts;
-
+    Fire
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
