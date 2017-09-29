@@ -9,9 +9,16 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+
+import teampass.gympass.adapter.ListMenu;
+import teampass.gympass.model.Menun;
 
 public class ExerciseActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-
+    private ListView lv_exercise;
+    private ArrayList<Menun> menuns=new ArrayList<Menun>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +34,12 @@ public class ExerciseActivity extends AppCompatActivity implements NavigationVie
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        doCreateFakeData();
+        lv_exercise=(ListView)findViewById(R.id.lv_exercise);
+
+        ListMenu adapter=new ListMenu(ExerciseActivity.this,R.layout.item_menu,menuns);
+        lv_exercise.setAdapter(adapter);
     }
     @Override
     public void onBackPressed() {
@@ -63,5 +76,20 @@ public class ExerciseActivity extends AppCompatActivity implements NavigationVie
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+    private void doCreateFakeData(){
+        Menun m1=new Menun(R.drawable.bung,"BỤNG");
+        Menun m2=new Menun(R.drawable.lung,"LƯNG");
+        Menun m3=new Menun(R.drawable.bapchan,"BẮP TAY");
+        Menun m4=new Menun(R.drawable.nguc,"NGỰC");
+        Menun m5=new Menun(R.drawable.cangtay,"CẲNG TAY");
+        Menun m6=new Menun(R.drawable.bapchan,"BẮP CHÂN");
+
+        menuns.add(m1);
+        menuns.add(m2);
+        menuns.add(m3);
+        menuns.add(m4);
+        menuns.add(m5);
+        menuns.add(m6);
     }
 }

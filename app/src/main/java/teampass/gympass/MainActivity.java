@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         int secondsDelayed = 3;
         new Handler().postDelayed(new Runnable() {
             public void run() {
-                startActivity(new Intent(MainActivity.this, Exercise_Menu.class));
+                startActivity(new Intent(MainActivity.this, ExerciseActivity.class));
                 finish();
             }
         }, secondsDelayed * 1000);
