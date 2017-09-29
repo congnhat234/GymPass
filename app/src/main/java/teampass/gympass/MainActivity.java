@@ -16,13 +16,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        int secondsDelayed = 3;
+        int secondsDelayed = 1;
         new Handler().postDelayed(new Runnable() {
             public void run() {
-                startActivity(new Intent(MainActivity.this, ExerciseActivity.class));
+                startActivity(new Intent(MainActivity.this, Exercise_Menu.class));
                 finish();
             }
-        }, secondsDelayed * 1000);
+        }, secondsDelayed * 3000);
     }
 
 
