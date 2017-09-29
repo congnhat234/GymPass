@@ -19,6 +19,7 @@
         <activity android:name=".Exercise_Menu" />
         <activity android:name=".Nutrition_01Activity" />
         <activity android:name=".WorkoutsActivity" />
+        <activity android:name=".WorkoutsThehinh" />
         <activity android:name=".NutritionActivity" />
         <activity android:name=".Nutrition_02Activity" />
         <activity android:name=".Nutrition_03Activity" />

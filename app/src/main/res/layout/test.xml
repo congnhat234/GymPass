@@ -12,6 +12,7 @@
 
 
  <LinearLayout
+     android:id="@+id/ll_thehinh_workouts"
      android:orientation="horizontal"
      android:layout_width="match_parent"
      android:layout_height="80dp">
@@ -34,8 +35,8 @@
          android:id="@+id/tv_thehinh3"
          android:gravity="center"
          android:background="@drawable/arr"
-         android:layout_width="30dp"
-         android:layout_height="30dp" />
+         android:layout_width="@dimen/btn_size"
+         android:layout_height="@dimen/btn_size" />
  </LinearLayout>
 
 

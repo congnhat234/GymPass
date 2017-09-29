@@ -55,5 +55,6 @@ public class CustomAdapter extends ArrayAdapter {
         ImageView imgTheHinh;
         TextView tvTheHinh2;
     }
+
 }
 
