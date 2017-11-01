@@ -24,6 +24,7 @@ import teampass.gympass.model.Menun;
 public class ListMenu extends ArrayAdapter<Menun> {
     Context mContext;
     ArrayList<Menun> mMenun = new ArrayList<Menun>();
+
     public ListMenu(@NonNull Context context, @LayoutRes int resource, @NonNull List<Menun> objects) {
         super(context, resource, objects);
         this.mContext = context;
@@ -35,7 +36,7 @@ public class ListMenu extends ArrayAdapter<Menun> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         View rowView = convertView;
         ViewHolder viewHolder;
-        if(rowView == null){
+        if (rowView == null) {
             LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             rowView = inflater.inflate(R.layout.item_menu, null);
             viewHolder = new ViewHolder();
@@ -43,7 +44,7 @@ public class ListMenu extends ArrayAdapter<Menun> {
             viewHolder.imgAva = (ImageView) rowView.findViewById(R.id.imgAva);
             rowView.setTag(viewHolder);
 
-        }else {
+        } else {
             viewHolder = (ViewHolder) convertView.getTag();
 
         }
@@ -53,7 +54,7 @@ public class ListMenu extends ArrayAdapter<Menun> {
         return rowView;
     }
 
-    static  class ViewHolder{
+    static class ViewHolder {
         TextView txtName;
         ImageView imgAva;
     }

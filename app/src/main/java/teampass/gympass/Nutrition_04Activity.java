@@ -23,6 +23,7 @@ public class Nutrition_04Activity extends AppCompatActivity {
         ListMenu adapter = new ListMenu(Nutrition_04Activity.this,R.layout.item_menu,mMenun);
         lvThucpham.setAdapter(adapter);
     }
+
     private void doCreateFakeData() {
         Menun m1 = new Menun(R.drawable.thucpham1, "Thực phẩm----");
         Menun m2 = new Menun(R.drawable.thucpham2, "Thực phẩm----");

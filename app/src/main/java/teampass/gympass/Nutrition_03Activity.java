@@ -20,9 +20,10 @@ public class Nutrition_03Activity extends AppCompatActivity {
         doCreateFakeData();
 
         lvTangco = (ListView) findViewById(R.id.lvTangco);
-        ListMenu adapter = new ListMenu(Nutrition_03Activity.this,R.layout.item_menu,mMenun);
+        ListMenu adapter = new ListMenu(Nutrition_03Activity.this, R.layout.item_menu, mMenun);
         lvTangco.setAdapter(adapter);
     }
+
     private void doCreateFakeData() {
         Menun m1 = new Menun(R.drawable.tangcot2, "Thực đơn thứ 2");
         Menun m2 = new Menun(R.drawable.tangcot3, "Thực đơn thứ 3");

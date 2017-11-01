@@ -6,8 +6,8 @@ package teampass.gympass.model;
  */
 
 public class Menu {
-        private int imgTheHinh;
-        private String name;
+    private int imgTheHinh;
+    private String name;
 
     public Menu(int imgTheHinh, String name) {
         this.imgTheHinh = imgTheHinh;

@@ -49,6 +49,7 @@ public class Nutrition_01Activity extends AppCompatActivity {
             }
         });
     }
+
     private void doCreateFakeData() {
         Menun m1 = new Menun(R.drawable.tangcant2, "Thực đơn thứ 2");
         Menun m2 = new Menun(R.drawable.tangcant3, "Thực đơn thứ 3");

@@ -20,9 +20,10 @@ public class Nutrition_02Activity extends AppCompatActivity {
         doCreateFakeData();
 
         lvGiamcan = (ListView) findViewById(R.id.lvGiamcan);
-        ListMenu adapter = new ListMenu(Nutrition_02Activity.this, R.layout.item_menu,mMenun);
+        ListMenu adapter = new ListMenu(Nutrition_02Activity.this, R.layout.item_menu, mMenun);
         lvGiamcan.setAdapter(adapter);
     }
+
     private void doCreateFakeData() {
         Menun m1 = new Menun(R.drawable.giamcant2, "Thực đơn thứ 2");
         Menun m2 = new Menun(R.drawable.giamcant3, "Thực đơn thứ 3");

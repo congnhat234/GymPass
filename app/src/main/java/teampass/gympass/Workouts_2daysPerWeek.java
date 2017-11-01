@@ -1,10 +1,7 @@
 package teampass.gympass;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -12,10 +9,8 @@ import java.util.ArrayList;
 import teampass.gympass.adapter.CustomAdapter;
 import teampass.gympass.model.Menu;
 
-import static teampass.gympass.R.drawable.abs;
 import static teampass.gympass.R.drawable.back;
 import static teampass.gympass.R.drawable.bung1;
-import static teampass.gympass.R.drawable.burnfat;
 import static teampass.gympass.R.drawable.cc;
 import static teampass.gympass.R.drawable.chest;
 import static teampass.gympass.R.drawable.fitness;
@@ -32,9 +27,14 @@ import static teampass.gympass.R.drawable.threedays;
 public class Workouts_2daysPerWeek extends AppCompatActivity {
     private ListView lvDay1;
     private ListView lvDay2;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.workouts_2daysperweek);
+        listmenu();
+    }
+
+    public void listmenu() {
         final ArrayList<Menu> arrayList1 = new ArrayList<>();
         Menu menu1 = new Menu(cc, "Thể hình");
         Menu menu2 = new Menu(fitness, "Fitness");
@@ -70,29 +70,5 @@ public class Workouts_2daysPerWeek extends AppCompatActivity {
         CustomAdapter customAdapter2 = new CustomAdapter(this, R.layout.test, arrayList2);
         lvDay2 = (ListView) findViewById(R.id.lv_workouts_day2);
         lvDay2.setAdapter(customAdapter2);
-
-
-//        lvDay1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-//                switch (position) {
-//                    case 0:
-//                        Intent intent = new Intent(WorkoutsActivity.this, WorkoutsThehinh.class);
-//                        startActivity(intent);
-//                        break;
-//                    case 1:
-//                        Intent intent1 = new Intent(WorkoutsActivity.this, WorkoutsThehinh.class);
-//                        startActivity(intent1);
-//                        break;
-//
-//
-//                }
-//            }
-//        });
-//    }
-//}
-
-
-
     }
 }

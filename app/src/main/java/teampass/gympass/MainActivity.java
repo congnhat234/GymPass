@@ -23,40 +23,4 @@ public class MainActivity extends AppCompatActivity {
             }
         }, secondsDelayed * 1000);
     }
-
-
-//        Intent intent = new Intent(this, ExerciseActivity.class);
-//
-//        startActivity(intent);
-//
-//        finish();
-//
-//        imgcustom = (ImageView)
-//
-//                findViewById(R.id.img_custom);
-//
-//        imgworkout = (ImageView)
-//
-//                findViewById(R.id.img_workout);
-//        imgcustom.setOnClickListener(new View.OnClickListener()
-//
-//        {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(MainActivity.this, NutritionActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-//        imgworkout.setOnClickListener(new View.OnClickListener()
-//
-//        {
-//            public void onClick(View view) {
-//                Intent intent = new Intent(MainActivity.this, WorkoutsActivity.class);
-//                startActivity(intent);
-//            }
-//
-//        });
-//
-//
-//    }
 }

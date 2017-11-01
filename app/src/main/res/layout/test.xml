@@ -1,44 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
+        android:id="@+id/ll_thehinh_workouts"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorMain"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp"
-        >
+        android:layout_height="80dp"
+        android:orientation="horizontal">
 
-
- <LinearLayout
-     android:id="@+id/ll_thehinh_workouts"
-     android:orientation="horizontal"
-     android:layout_width="match_parent"
-     android:layout_height="80dp">
-
-     <ImageView
+        <ImageView
             android:id="@+id/img_thehinh"
-            android:gravity="center"
-            android:background="@drawable/cc"
             android:layout_width="80dp"
-            android:layout_height="80dp"/>
-     <TextView
-         android:id="@+id/tv_thehinh2"
-         android:textStyle="bold"
-         android:textSize="20sp"
-         android:gravity="center"
-         android:text="Thể hình"
-         android:layout_width="250dp"
-         android:layout_height="80dp" />
-     <TextView
-         android:id="@+id/tv_thehinh3"
-         android:gravity="center"
-         android:background="@drawable/arr"
-         android:layout_width="@dimen/btn_size"
-         android:layout_height="@dimen/btn_size" />
- </LinearLayout>
+            android:layout_height="80dp"
+            android:background="@drawable/cc"
+            android:gravity="center" />
 
+        <TextView
+            android:id="@+id/tv_thehinh2"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="Thể hình"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
+        <TextView
+            android:id="@+id/tv_thehinh3"
+            android:layout_width="@dimen/btn_size"
+            android:layout_height="@dimen/btn_size"
+            android:background="@drawable/arr"
+            android:gravity="center" />
+    </LinearLayout>
 
 </LinearLayout>

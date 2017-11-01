@@ -5,8 +5,7 @@
         <item
             android:id="@+id/nav_exercise"
             android:icon="@drawable/menu1"
-            android:title="Bài tập"
-            />
+            android:title="Bài tập" />
         <item
             android:id="@+id/nav_workout"
             android:icon="@drawable/menu2"
@@ -23,9 +22,9 @@
             android:id="@+id/nav_more"
             android:icon="@drawable/menu5"
             android:title="Khác" />
-        <item android:title="Thoát"
-            android:id="@+id/nav_exit">
-        </item>
+        <item
+            android:id="@+id/nav_exit"
+            android:title="Thoát"></item>
     </group>
 
 </menu>
