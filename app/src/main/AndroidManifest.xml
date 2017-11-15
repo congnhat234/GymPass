@@ -25,6 +25,7 @@
         <activity android:name=".Nutrition_02Activity" />
         <activity android:name=".Nutrition_03Activity" />
         <activity android:name=".Nutrition_04Activity" />
+        <activity android:name=".ExerciseBt"></activity>
     </application>
 
 </manifest>

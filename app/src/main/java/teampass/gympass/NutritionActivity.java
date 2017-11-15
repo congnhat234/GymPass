@@ -118,7 +118,6 @@ public class NutritionActivity extends AppCompatActivity implements NavigationVi
         Menun m3 = new Menun(R.drawable.protein, "THỰC ĐƠN TĂNG CƠ");
         Menun m4 = new Menun(R.drawable.foodothers, "THỰC PHẨM BỔ SUNG");
 
-
         menuns.add(m1);
         menuns.add(m2);
         menuns.add(m3);
