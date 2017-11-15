@@ -6,7 +6,8 @@
     android:background="@color/colorMain"
     android:orientation="vertical"
     android:paddingBottom="10dp"
-    android:paddingTop="10dp">
+    android:paddingTop="10dp"
+    android:layout_margin="16dp">
 
     <LinearLayout
         android:id="@+id/ll_thehinh_workouts"
@@ -18,7 +19,7 @@
             android:id="@+id/img_thehinh"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:background="@drawable/cc"
+            android:background="@drawable/roundborderimage"
             android:gravity="center" />
 
         <TextView
