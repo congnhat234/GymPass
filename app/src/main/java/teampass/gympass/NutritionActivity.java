@@ -15,12 +15,13 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-import teampass.gympass.adapter.ListMenu;
+import teampass.gympass.adapter.ListNutrition;
+import teampass.gympass.bean.NhomBaiTap;
 import teampass.gympass.model.Menun;
 
 public class NutritionActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private ListView lv_nutrition;
-    private ArrayList<Menun> menuns = new ArrayList<Menun>();
+    private ArrayList<NhomBaiTap> menuns = new ArrayList<NhomBaiTap>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +29,7 @@ public class NutritionActivity extends AppCompatActivity implements NavigationVi
         setContentView(R.layout.slide_bar_action_nutrition);
         menu_main();
 
-        doCreateFakeData();
+        //doCreateFakeData();
         lv_nutrition = (ListView) findViewById(R.id.lv_nutrition);
         listmenu();
     }
@@ -50,7 +51,7 @@ public class NutritionActivity extends AppCompatActivity implements NavigationVi
     }
 
     public void listmenu() {
-        ListMenu adapter = new ListMenu(NutritionActivity.this, R.layout.item_menu, menuns);
+        ListNutrition adapter = new ListNutrition(NutritionActivity.this, R.layout.item_menu, menuns);
         lv_nutrition.setAdapter(adapter);
         lv_nutrition.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -112,17 +113,17 @@ public class NutritionActivity extends AppCompatActivity implements NavigationVi
         return true;
     }
 
-    private void doCreateFakeData() {
-        Menun m1 = new Menun(R.drawable.tangcan, "THỰC ĐƠN TĂNG CÂN");
-        Menun m2 = new Menun(R.drawable.diet, "THỰC ĐƠN GIẢM CÂN");
-        Menun m3 = new Menun(R.drawable.protein, "THỰC ĐƠN TĂNG CƠ");
-        Menun m4 = new Menun(R.drawable.foodothers, "THỰC PHẨM BỔ SUNG");
-
-
-        menuns.add(m1);
-        menuns.add(m2);
-        menuns.add(m3);
-        menuns.add(m4);
-
-    }
+//    private void doCreateFakeData() {
+//        Menun m1 = new Menun(R.drawable.tangcan, "THỰC ĐƠN TĂNG CÂN");
+//        Menun m2 = new Menun(R.drawable.diet, "THỰC ĐƠN GIẢM CÂN");
+//        Menun m3 = new Menun(R.drawable.protein, "THỰC ĐƠN TĂNG CƠ");
+//        Menun m4 = new Menun(R.drawable.foodothers, "THỰC PHẨM BỔ SUNG");
+//
+//
+//        menuns.add(m1);
+//        menuns.add(m2);
+//        menuns.add(m3);
+//        menuns.add(m4);
+//
+//    }
 }
