@@ -11,24 +11,27 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import junit.framework.Assert;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import teampass.gympass.R;
-import teampass.gympass.model.Menun;
+import teampass.gympass.bean.NhomBaiTap;
+import teampass.gympass.bean.NhomWorkout;
 
 /**
  * Created by Admin on 9/16/2017.
  */
 
-public class ListMenu extends ArrayAdapter<Menun> {
+public class ListNhomWorkout extends ArrayAdapter<NhomWorkout> {
     Context mContext;
-    ArrayList<Menun> mMenun = new ArrayList<Menun>();
+    ArrayList<NhomWorkout> mNhom = new ArrayList<NhomWorkout>();
 
-    public ListMenu(@NonNull Context context, @LayoutRes int resource, @NonNull List<Menun> objects) {
+    public ListNhomWorkout(@NonNull Context context, @LayoutRes int resource, @NonNull List<NhomWorkout> objects) {
         super(context, resource, objects);
         this.mContext = context;
-        this.mMenun = new ArrayList<Menun>(objects);
+        this.mNhom = new ArrayList<NhomWorkout>(objects);
     }
 
     @NonNull
@@ -48,12 +51,16 @@ public class ListMenu extends ArrayAdapter<Menun> {
             viewHolder = (ViewHolder) convertView.getTag();
 
         }
-        Menun menun = mMenun.get(position);
-        viewHolder.txtName.setText(menun.getName());
-        viewHolder.imgAva.setImageResource(menun.getAvatar());
+        NhomWorkout obj = mNhom.get(position);
+        viewHolder.txtName.setText(obj.getTennhom());
+        viewHolder.imgAva.setImageResource(getDrawable(getContext(),obj.getHinhanh()));
         return rowView;
     }
-
+    public static int getDrawable(Context context, String name) {
+        Assert.assertNotNull(context);
+        Assert.assertNotNull(name);
+        return context.getResources().getIdentifier(name,"drawable", context.getPackageName());
+    }
     static class ViewHolder {
         TextView txtName;
         ImageView imgAva;

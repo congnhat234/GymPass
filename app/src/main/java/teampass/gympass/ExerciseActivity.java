@@ -1,6 +1,7 @@
 package teampass.gympass;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -9,28 +10,48 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.List;
 
-import teampass.gympass.adapter.ListMenu;
-import teampass.gympass.model.Menun;
+import teampass.gympass.adapter.ListNhomBaiTap;
+import teampass.gympass.bean.Exercise;
+import teampass.gympass.bean.NhomBaiTap;
 
 public class ExerciseActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private ListView lv_exercise;
-    private ArrayList<Menun> menuns = new ArrayList<Menun>();
-
+    private ArrayList<NhomBaiTap> list = new ArrayList<NhomBaiTap>();
+    private DatabaseOpenHelper mDBHelper;
+    private SQLiteDatabase mDb;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.slide_bar_action);
         menu_main();
-
-        doCreateFakeData();
+        //doCreateFakeData();
         lv_exercise = (ListView) findViewById(R.id.lv_exercise);
+        final DatabaseAccess databaseAccess = DatabaseAccess.getInstance(this);
+        databaseAccess.open();
+        final List<NhomBaiTap> listNhom = databaseAccess.getAllNhomBaiTap();
+        this.list.addAll(listNhom);
+        databaseAccess.close();
 
-        ListMenu adapter = new ListMenu(ExerciseActivity.this, R.layout.item_menu, menuns);
+        ListNhomBaiTap adapter = new ListNhomBaiTap(ExerciseActivity.this, R.layout.item_menu, list);
         lv_exercise.setAdapter(adapter);
+        this.lv_exercise.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                databaseAccess.open();
+                List<Exercise> listExercise = databaseAccess.getExercisesByID(listNhom.get(i).getId());
+                for(int j=0;j<listExercise.size();j++){
+                    //System.out.println(listTextNote.get(j).getContent());
+                }
+            }
+        });
     }
 
     public void menu_main() {
@@ -82,19 +103,5 @@ public class ExerciseActivity extends AppCompatActivity implements NavigationVie
         return true;
     }
 
-    private void doCreateFakeData() {
-        Menun m1 = new Menun(R.drawable.bung, "BỤNG");
-        Menun m2 = new Menun(R.drawable.lung, "LƯNG");
-        Menun m3 = new Menun(R.drawable.bapchan, "BẮP TAY");
-        Menun m4 = new Menun(R.drawable.nguc, "NGỰC");
-        Menun m5 = new Menun(R.drawable.cangtay, "CẲNG TAY");
-        Menun m6 = new Menun(R.drawable.bapchan, "BẮP CHÂN");
 
-        menuns.add(m1);
-        menuns.add(m2);
-        menuns.add(m3);
-        menuns.add(m4);
-        menuns.add(m5);
-        menuns.add(m6);
-    }
 }

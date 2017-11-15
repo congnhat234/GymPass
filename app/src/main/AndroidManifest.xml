@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ExerciseActivity" />
+        <activity android:name=".WorkoutsThehinh" />
         <activity android:name=".Nutrition_01Activity" />
         <activity android:name=".WorkoutsActivity" />
         <activity android:name=".NutritionActivity" />

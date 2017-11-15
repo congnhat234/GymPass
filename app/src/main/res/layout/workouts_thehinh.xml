@@ -30,103 +30,11 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <ListView
+        android:id="@+id/lv_workout_option"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="@dimen/img_size"
-            android:layout_height="@dimen/img_size"
-            android:layout_gravity="center"
-            android:layout_marginLeft="@dimen/img_margin_left"
-            android:layout_marginRight="@dimen/img_margin_right"
-            android:background="@drawable/time" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="@dimen/text_width"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/margin_left"
-            android:layout_weight="0.20"
-            android:gravity="center_vertical"
-            android:text="2 ngày mỗi tuần"
-            android:textAllCaps="false"
-            android:textSize="@dimen/text_size" />
-
-        <ImageView
-            android:id="@+id/imageView13"
-            android:layout_width="@dimen/btn_size"
-            android:layout_height="@dimen/btn_size"
-            android:layout_gravity="center"
-            android:background="@drawable/arr" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="@dimen/img_size"
-            android:layout_height="@dimen/img_size"
-            android:layout_gravity="center"
-            android:layout_marginLeft="@dimen/img_margin_left"
-            android:layout_marginRight="@dimen/img_margin_right"
-            android:background="@drawable/time">
-
-        </ImageView>
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="@dimen/text_width"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/margin_left"
-            android:layout_weight="0.20"
-            android:gravity="center_vertical"
-            android:text="3 ngày mỗi tuần"
-            android:textAllCaps="false"
-            android:textSize="@dimen/text_size" />
-
-        <ImageView
-            android:layout_width="@dimen/btn_size"
-            android:layout_height="@dimen/btn_size"
-            android:layout_gravity="center"
-            android:background="@drawable/arr" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="@dimen/img_size"
-            android:layout_height="@dimen/img_size"
-            android:layout_gravity="center"
-            android:layout_marginLeft="@dimen/img_margin_left"
-            android:layout_marginRight="@dimen/img_margin_right"
-            android:background="@drawable/time" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="@dimen/text_width"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/margin_left"
-            android:layout_weight="0.20"
-            android:gravity="center_vertical"
-            android:text="4 ngày mỗi tuần"
-            android:textAllCaps="false"
-            android:textSize="@dimen/text_size" />
-
-        <ImageView
-            android:layout_width="@dimen/btn_size"
-            android:layout_height="@dimen/btn_size"
-            android:layout_gravity="center"
-            android:background="@drawable/arr" />
-    </LinearLayout>
+    </ListView>
 
 </LinearLayout>
