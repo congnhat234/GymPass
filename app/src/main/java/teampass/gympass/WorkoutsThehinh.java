@@ -54,7 +54,7 @@ public class WorkoutsThehinh extends AppCompatActivity {
                         editor.commit();
                         break;
                 }
-                Intent intent = new Intent(WorkoutsThehinh.this, WorkoutsThehinh.class);
+                Intent intent = new Intent(WorkoutsThehinh.this, Workouts_2daysPerWeek.class);
                 startActivity(intent);
             }
         });

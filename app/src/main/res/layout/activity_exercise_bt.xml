@@ -33,18 +33,8 @@
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/colorBackgroundmain"
-            android:gravity="center"
-            android:text="Day 1"
-            android:textColor="@color/colorWhite"
-            android:textSize="@dimen/text_size"
-            android:textStyle="bold" />
-
         <ListView
-            android:id="@+id/lv_exercisebt"
+            android:id="@+id/lv_exercise"
             android:layout_width="match_parent"
             android:layout_height="500dp">
 

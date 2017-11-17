@@ -1,6 +1,8 @@
 package teampass.gympass;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -45,11 +47,17 @@ public class ExerciseActivity extends AppCompatActivity implements NavigationVie
 
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                databaseAccess.open();
-                List<Exercise> listExercise = databaseAccess.getExercisesByID(listNhom.get(i).getId());
-                for(int j=0;j<listExercise.size();j++){
-                    //System.out.println(listTextNote.get(j).getContent());
-                }
+                SharedPreferences sharedPreferences = getSharedPreferences("exerciseData", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putInt("id_nhom", list.get(i).getId());
+                editor.commit();
+                Intent intent = new Intent(ExerciseActivity.this, ExerciseBt.class);
+                startActivity(intent);
+//                databaseAccess.open();
+//                List<Exercise> listExercise = databaseAccess.getExercisesByID(listNhom.get(i).getId());
+//                for(int j=0;j<listExercise.size();j++){
+//                    //System.out.println(listTextNote.get(j).getContent());
+//                }
             }
         });
     }

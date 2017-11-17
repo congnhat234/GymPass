@@ -62,14 +62,14 @@ public class WorkoutsActivity  extends AppCompatActivity implements NavigationVi
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 SharedPreferences sharedPreferences = getSharedPreferences("myData", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putInt("soA", i);
+                editor.putInt("id_workout", i);
                 editor.commit();
 
-                databaseAccess.open();
-                List<Exercise> listTextNote = databaseAccess.getExercisesByID(listNhom.get(i).getId());
-                for(int j=0;j<listTextNote.size();j++){
-                    System.out.println(listTextNote.get(j).getChitiet());
-                }
+//                databaseAccess.open();
+//                List<Exercise> listTextNote = databaseAccess.getExercisesByID(listNhom.get(i).getId());
+//                for(int j=0;j<listTextNote.size();j++){
+//                    System.out.println(listTextNote.get(j).getChitiet());
+//                }
                 Intent intent = new Intent(WorkoutsActivity.this, WorkoutsThehinh.class);
                 startActivity(intent);
             }
